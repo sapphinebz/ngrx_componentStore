@@ -1,0 +1,4 @@
+<button (click)="toggle()">{{ label$ | async }}</button>
+<div *ngIf="toggle$ | async">
+  <ng-content></ng-content>
+</div>

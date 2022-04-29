@@ -1,0 +1,11 @@
+<div class="display-pokemon-container" *ngIf="display$ | async">
+  <h2>information</h2>
+  <div *ngIf="pokemonName$ | async as pokemonName">name: {{ pokemonName }}</div>
+
+  <app-toggle-button>
+    <div *ngIf="pokemonSprites$ | async as pokemonSprites">
+      <img src="{{ pokemonSprites.front_default }}" alt="front pokemon image" />
+      <img src="{{ pokemonSprites.back_default }}" alt="back pokemon image" />
+    </div>
+  </app-toggle-button>
+</div>
