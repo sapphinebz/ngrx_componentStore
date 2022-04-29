@@ -1,7 +1,9 @@
 # Pokemon NgRxStore Example
 
 reactive programming (ngrx component store + zoneless ngrxPush)
+
 ngrx component store (state management)
+
 zoneless(check it out on main.ts)
 
 # NgrxComponentStore
