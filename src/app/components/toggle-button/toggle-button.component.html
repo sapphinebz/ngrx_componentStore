@@ -1,4 +1,4 @@
-<button (click)="toggle()">{{ label$ | async }}</button>
-<div *ngIf="toggle$ | async">
+<button (click)="toggle()">{{ label$ | ngrxPush }}</button>
+<div *ngIf="toggle$ | ngrxPush">
   <ng-content></ng-content>
 </div>

@@ -1,5 +1,9 @@
 # Pokemon NgRxStore Example
 
+reactive programming (ngrx component store + zoneless ngrxPush)
+ngrx component store (state management)
+zoneless(check it out on main.ts)
+
 # NgrxComponentStore
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.

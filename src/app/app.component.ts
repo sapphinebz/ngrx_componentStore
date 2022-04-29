@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { AppStoreService } from './store/app-store.service';
 
 @Component({
@@ -8,6 +8,10 @@ import { AppStoreService } from './store/app-store.service';
 })
 export class AppComponent {
   title = 'ngrx_componentStore';
+
+  detectChanges() {
+    console.count('detectChanges');
+  }
   constructor(public store: AppStoreService) {}
 
   searchPokemon(search: string) {

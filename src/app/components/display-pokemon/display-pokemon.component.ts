@@ -1,5 +1,10 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { combineLatest } from 'rxjs';
+import {
+  Component,
+  OnInit,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+} from '@angular/core';
+import { combineLatest, tap } from 'rxjs';
 import { AppStoreService } from 'src/app/store/app-store.service';
 
 @Component({

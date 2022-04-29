@@ -4,5 +4,7 @@
 </div>
 
 <div>
-  <app-rc-loading *ngIf="store.isLoading$ | async"></app-rc-loading>
+  <app-rc-loading *ngIf="store.isLoading$ | ngrxPush"></app-rc-loading>
 </div>
+
+{{ detectChanges() }}
